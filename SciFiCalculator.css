@@ -1,0 +1,50 @@
+.scifi-calculator {
+  width: 600px;
+  margin: auto;
+  padding: 60px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #111;
+  box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5);
+  background: url('https://images.pexels.com/photos/17894531/pexels-photo-17894531/free-photo-of-bare-branches-of-tree-in-forest.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+.scifi-calculator input[type="text"] {
+  width: calc(100% - 8px);
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #f8f8f8;
+  border: none;
+  color: rgb(12, 17, 17);
+}
+
+.scifi-calculator .buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+.scifi-calculator button {
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #444;
+  color: #0ff;
+  cursor: pointer;
+}
+
+.scifi-calculator button.clear-btn {
+  grid-column: span 2;
+  background-color: #ff3300;
+}
+
+.scifi-calculator button.eval-btn {
+  grid-column: span 2;
+  background-color: #33cc33;
+}
+
+.scifi-calculator button:hover {
+  background-color: #555;
+}
